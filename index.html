@@ -7,7 +7,7 @@
     <meta name="keywords" content="pizza, delivery food, fast food, sushi, take away, chinese, italian food">
     <meta name="description" content="">
     <meta name="author" content="Ansonika">
-    <title>Travelmates</title>
+    <title>Travel Mates</title>
 
     <!-- Favicons-->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -35,6 +35,30 @@
     
     <!-- Modernizr -->
 	<script src="js/modernizr.js"></script> 
+    <style>
+    .bs-example{
+        margin: 20px;
+    }
+    .accordion .fa{
+        margin-right: 0.5rem;
+
+    }
+</style>
+<script>
+    $(document).ready(function(){
+        // Add minus icon for collapse element which is open by default
+        $(".collapse.show").each(function(){
+          $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+        });
+        
+        // Toggle plus minus icon on show hide of collapse element
+        $(".collapse").on('show.bs.collapse', function(){
+          $(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+        }).on('hide.bs.collapse', function(){
+          $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+        });
+    });
+</script>
 </head>
 
 <body>
@@ -54,9 +78,9 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col--md-4 col-sm-4 col-xs-4">
-                <a href="index.html" id="logo">
-                <img src="img/Travel.png" width="190" height="39" alt="" data-retina="true" class="hidden-xs">
-                <img src="img/logo_mobile.png" width="59" height="23" alt="" data-retina="true" class="hidden-lg hidden-md hidden-sm">
+                <a href="index.html" id="logo"">
+                <img src="img/Travel.png" width="190" height="39" alt="" data-retina="true" class="hidden-xs" style="vertical-align: super;">
+                <!-- <img src="img/logo_mobile.png" width="59" height="23" alt="" data-retina="true" class="hidden-lg hidden-md hidden-sm"> -->
                 </a>
             </div>
             <nav class="col--md-8 col-sm-8 col-xs-8">
@@ -68,9 +92,9 @@
                 <a href="#" class="open_close" id="close_in"><i class="icon_close"></i></a>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Safety Tips</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#safety">Safety Tips</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
                     <li><a href="#">Privacy</a></li>
                    
                  </ul>
@@ -87,7 +111,7 @@
         <div id="sub_content">
             <h1>Find the perfect travel companion!</h1>
             <p>
-                The world may be a big place to explore but you will be amazed by how many people share your dreams. Share the cost, share the journey, share the experience.
+                The World has endless places to explore and so does the people who share the same dream. Share the cost, share the journey, share the experience.
             </p>
             <p>Our industry-leading algorithms will ensure that you end up with your perfect travelling companion.</p>
             
@@ -96,10 +120,10 @@
     <img src="" alt="" class="header-video--media" data-video-src="" data-teaser-source="video/intro" data-provider="" data-video-width="1920" data-video-height="960">
     <div id="count" class="hidden-xs">
         <ul>
-            <li><span class="number">3000000</span> Verified Profils</li>
-            <li><span class="number">210+</span> Countries</li>
-            <li><span class="number">24+</span> Travel Destinations</li>
-             <li><span class="number">24/7</span> Customer Support</li>
+            <li><h2 style="color: white;"><b>3M+</b></h2> Verified Profils</li>
+            <li><h2 style="color: white;"><b>210+</b></h2> Countries</li>
+            <li><h2 style="color: white;"><b>24+<b></h2> Travel Destinations</li>
+             <li><h2 style="color: white;"><b>24/7</b></h2> Customer Support</li>
         </ul>
     </div>
     </section><!-- End Header video -->
@@ -107,59 +131,228 @@
     
     
 
-         <div class="container margin_60">
+         <div class="container margin_60" id="safety">
+        
+         <div class="main_title" >
+            <h2 class="nomargin_top" style="padding-top:0">Saftety Tips.</h2>
+            <br>
+            <br>
+            <p>
+                In the modern world we have become so used to dealing with people on line, so trusting of people we barely know, we forget
+that some people,a very very small minority, may not be exactly the person that they
+are portraying on line.
+
+            </p>
+            <p>
+                And whilst we do our upmost to make sure those people are not allowed access to our site and services,
+it pays to bear a few important safety tips in mind.
+
+            </p>
+            <h3>Never Send Money to Another Member for Any Reason.</h3>
+            
+        </div>
+    </div>
+      <!-- End container -->
+    <!-- Content ================================================== -->
+    <div class="white_bg">
+<div class="container margin_60_35" id="faq">
+    <div class="row">
+        
+    <h2 class="nomargin_top" style="padding-top:0" align="center">Frequently Asked Questions</h2>
+        
+        <div class="col-md-12">
+
+     
+         
+         <div class="panel-group" id="payment">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#payment" href="#collapseOne">Are my photos in this app public or private?<i class="indicator icon_plus_alt2 pull-right"></i></a>
+                      </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        All your photos in this app can be seen by other members.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#payment" href="#collapseTwo">Will my name be visible to other members?<i class="indicator icon_plus_alt2 pull-right"></i></a>
+                      </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        Your name, age, gender and location which you provided in the app will be visible to other members.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#payment" href="#collapseThree">How many messages/likes can I send with premium membership?<i class="indicator icon_plus_alt2 pull-right"></i></a>
+                      </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        You can send unlimited messages/likes during your premium membership.
+                      </div>
+                    </div>
+                  </div>
+                   <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#payment" href="#collapseFour">How do I turn on/off Push notifications?<i class="indicator icon_plus_alt2 pull-right"></i></a>
+                      </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        You can turn on/off all push notifications in your profile (Settings/My Account).
+                      </div>
+                    </div>
+                  </div>
+                   <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#payment" href="#collapseFive">I think another user is sending me spam, what can I do?<i class="indicator icon_plus_alt2 pull-right"></i></a>
+                      </h4>
+                    </div>
+                    <div id="collapseFive" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        Just hit the "Report as SPAM" button on the message. This sends us a notification telling us who has been reported and the message ID, we can then go and check the message. Users who send spam will have their profiles and all sent emails deleted without warning.
+                      </div>
+                    </div>
+                  </div>
+                   <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#payment" href="#collapseSix">How can I search for members by username?<i class="indicator icon_plus_alt2 pull-right"></i></a>
+                      </h4>
+                    </div>
+                    <div id="collapseSix" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        Currently, we are not offering members the ability to search by username. Our development team is working on improving the keyword search feature to produce more refined results. We greatly appreciate your patience in this matter!
+                      </div>
+                    </div>
+                  </div>
+                   <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#payment" href="#collapseSeven">Can I get a refund on my paid access fee?<i class="indicator icon_plus_alt2 pull-right"></i></a>
+                      </h4>
+                    </div>
+                    <div id="collapseSeven" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        Sorry, no refund can be provided on your paid access fees. If you would like to cancel your current subscription, you can find helpful information from Apple or Google Play
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#payment" href="#collapseight">What kind of activity will lead to termination/block on my account?<i class="indicator icon_plus_alt2 pull-right"></i></a>
+                      </h4>
+                    </div>
+                    <div id="collapseight" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        If your account was suspended, a hold was placed due to suspicious account activity. Your profile and photos will be saved, but you will not be able to use the app, and other members will not be able to view your profile. Messages sent to your account will still be received, but cannot be accessed unless the suspension is fully reviewed and granted by Customer Support. Reasons for account suspension can include:
+Reports by other members about your profile or conduct
+Abusive, vulgar or sexually explicit language
+Asking for money up front or in advance of your date
+Using our site as an escort, or using the Service to solicit clients for an escort service
+Using our site to promote, solicit, or engage in prostitution
+Promoting or advertising a business
+Selling pictures, videos or cam sessions
+Soliciting passwords, bank information or other personal identifying information for commercial or unlawful purposes from other users
+Posting any false, misleading, or inaccurate content about yourself and/or your profile
+Having multiple active accounts
+Creating a profile if you are under the age of 18
+Posting or sending material that exploits people under the age of 18 in a sexual or violent manner, or solicits personal information from anyone under 18
+NOTE: We reserve the right to suspend accounts for any reason whatsoever, as outlined in our terms and conditions.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#payment" href="#collapseNine">How do I close my account?<i class="indicator icon_plus_alt2 pull-right"></i></a>
+                      </h4>
+                    </div>
+                    <div id="collapseNine" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        If you'd like to close your account just click on Edit Profile on your profile page, then click My Account, you'll find the option to close your account from there. All your photos and all sent messages will be deleted.
+                      </div>
+                    </div>
+                  </div>
+                   <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#payment" href="#collapseTen">I have a question, how can I contact you?<i class="indicator icon_plus_alt2 pull-right"></i></a>
+                      </h4>
+                    </div>
+                    <div id="collapseTen" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        You can contact us using a contact form here or send us an email at: support@travelmates.online. We will get back to you within 24 hours
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#payment" href="#collapseEleven">What information will be shown on my credit card statement?<i class="indicator icon_plus_alt2 pull-right"></i></a>
+                      </h4>
+                    </div>
+                    <div id="collapseEleven" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        All payment processing information will appear as a Glad Technologies purchase and your anonymity will be 100% protected.
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End panel-group -->
+              
+        </div><!-- End col-md-9 -->
+    </div><!-- End row -->
+</div>
+</div>
+<!-- End container -->
+<!-- End Content =============================================== -->
+ <div class="container margin_60">
         
          <div class="main_title">
-            <h2 class="nomargin_top" style="padding-top:0">How it works</h2>
-            <p>
-                Cum doctus civibus efficiantur in imperdiet deterruisset.
-            </p>
+            <h2 class="nomargin_top" style="padding-top:0">Meet your travel partner in 3 simple steps</h2>
+            
         </div>
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <div class="box_home" id="one">
                     <span>1</span>
-                    <h3>Search by address</h3>
-                    <p>
-                        Find all restaurants available in your zone.
-                    </p>
+                    <h3>Create a Profile</h3>
+                   
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <div class="box_home" id="two">
                     <span>2</span>
-                    <h3>Choose a restaurant</h3>
+                    <h3>Browse & Chat</h3>
                     <p>
                         We have more than 1000s of menus online.
                     </p>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <div class="box_home" id="three">
                     <span>3</span>
-                    <h3>Pay by card or cash</h3>
+                    <h3>Travel </h3>
                     <p>
                         It's quick, easy and totally secure.
                     </p>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="box_home" id="four">
-                    <span>4</span>
-                    <h3>Delivery or takeaway</h3>
-                    <p>
-                        You are lazy? Are you backing home?
-                    </p>
-                </div>
-            </div>
-        </div><!-- End row -->
-        
-        <div id="delivery_time" class="hidden-xs">
-            <strong><span>2</span><span>5</span></strong>
-            <h4>The minutes that usually takes to deliver!</h4> 
-        </div>
-        </div><!-- End container -->
             
+        </div><!-- End row -->
+<!-- faq ending-->
     <div class="white_bg">
     <div class="container margin_60">
         
