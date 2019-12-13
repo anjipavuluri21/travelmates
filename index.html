@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -45,7 +46,10 @@
 	
 	<!-- YOUR CUSTOM CSS -->
 	<link href="css/custom.css" rel="stylesheet">
-    
+    <!-- slider -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+   
     <!-- Modernizr -->
 	<script src="js/modernizr.js"></script> 
     <style>
@@ -59,6 +63,110 @@
     
     
 </style>
+<style type="text/css">
+
+
+/******************  News Slider Demo-13 *******************/
+.post-slide13{
+    padding: 0 15px;
+}
+.post-slide13 .post-img{
+    position: relative;
+}
+.post-slide13 .post-img > a{
+    display:block;
+}
+.post-slide13 .post-img img{
+    width: 100%;
+    height:auto;
+}
+.post-slide13 .post-img:hover:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height:100%;
+    background-color: rgba(220, 0, 90, 0.6);
+}
+.post-slide13 .post-img:after{
+    content: "\f065";
+    font-family: "Font Awesome 5 Free"; font-weight: 900;
+    position: absolute;
+    top:17px;
+    right:20px;
+    color:#fff;
+    opacity: 0;
+    transform: scale(0.8);
+    transition:all 0.3s linear 0s;
+}
+.post-slide13 .post-img:hover:after{
+    opacity: 1;
+    transform: scale(1);
+}
+.post-slide13 .post-title{
+    margin-top: 20px;
+}
+.post-slide13 .post-title > a{
+    color:#222;
+    display: block;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.post-slide13 .post-title > a:hover{
+    text-decoration: none;
+    color:#dc005a;
+}
+.post-slide13 .post-bar{
+    padding: 0;
+    list-style: none;
+}
+.post-slide13 .post-bar > li{
+    display: inline-block;
+}
+.post-slide13 .post-date,
+.post-slide13 .author,
+.post-slide13 .author > a{
+    color:#8f8f8f;
+    font-size: 12px;
+    margin-right: 16px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+.post-slide13 .post-date > i,
+.post-slide13 .author > i{
+    margin-right: 5px;
+}
+.post-slide13 .author > a:hover{
+    color:#dc005a;
+}
+.post-slide13 .post-description{
+    color:#8f8f8f;
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 5px;
+}
+.post-slide13 .post-description:before{
+    content: "";
+    display: block;
+    border-top: 4px solid #dc005a;
+    padding-bottom: 12px;
+    width: 50px;
+}
+.owl-theme .owl-controls .owl-page span{
+    width: 52px;
+    height:5px;
+    border-radius: 0;
+    opacity: 0.5;
+    margin-bottom: 0;
+}
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span{
+    background: #dc005a;
+    opacity: 1;
+}
+
+
+
+    </style>
   <script>
     $(document).ready(function(){
         // Add minus icon for collapse element which is open by default
@@ -338,7 +446,87 @@ NOTE: We reserve the right to suspend accounts for any reason whatsoever, as out
   <p>The .img-circle class shapes the image to a circle (not available in IE8):</p>            
   <img src="cinqueterre.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236"> 
 </div> End container -->
+<!-- slider start -->
 
+<div class="container margin_60">
+        <div class="main_title">
+            <h2 class="nomargin_top" style="padding-top:0">Find Travel Mates in 3 Steps</h2>
+            
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="news-slider13" class="owl-carousel">
+                    <div class="post-slide13">
+                        <div class="post-img">
+                            <a href="#"><img src="http://bestjquery.com/tutorial/news-slider/demo3/images/img-1.jpg" alt=""></a>
+                        </div>
+                        <h5 class="post-title"><a href="#">Aliquam rutrum</a></h5>
+                        <ul class="post-bar">
+                            <li class="post-date"><i class="fa fa-calendar"></i> june 5, 2015</li>
+                            <li class="author"><i class="fa fa-user"></i>   <a href="#">admin</a></li>
+                        </ul>
+                        <p class="post-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultrices felis in orci condimentum, at viverra nulla pulvinar. Donec diam nisl.
+                        </p>
+                    </div>
+                    <div class="post-slide13">
+                        <div class="post-img">
+                            <a href="#"><img src="http://bestjquery.com/tutorial/news-slider/demo3/images/img-2.jpg" alt=""></a>
+                        </div>
+                        <h5 class="post-title"><a href="#">Aliquam rutrum</a></h5>
+                        <ul class="post-bar">
+                            <li class="post-date"><i class="fa fa-calendar"></i> june 5, 2015</li>
+                            <li class="author"><i class="fa fa-user"></i>   <a href="#">admin</a></li>
+                        </ul>
+                        <p class="post-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultrices felis in orci condimentum, at viverra nulla pulvinar. Donec diam nisl.
+                        </p>
+                    </div>
+                    <div class="post-slide13">
+                        <div class="post-img">
+                            <a href="#"><img src="http://bestjquery.com/tutorial/news-slider/demo3/images/img-3.jpg" alt=""></a>
+                        </div>
+                        <h5 class="post-title"><a href="#">Aliquam rutrum</a></h5>
+                        <ul class="post-bar">
+                            <li class="post-date"><i class="fa fa-calendar"></i> june 5, 2015</li>
+                            <li class="author"><i class="fa fa-user"></i>   <a href="#">admin</a></li>
+                        </ul>
+                        <p class="post-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultrices felis in orci condimentum, at viverra nulla pulvinar. Donec diam nisl.
+                        </p>
+                    </div>
+                    <div class="post-slide13">
+                        <div class="post-img">
+                            <a href="#"><img src="http://bestjquery.com/tutorial/news-slider/demo3/images/img-4.jpg" alt=""></a>
+                        </div>
+                        <h5 class="post-title"><a href="#">Aliquam rutrum</a></h5>
+                        <ul class="post-bar">
+                            <li class="post-date"><i class="fa fa-calendar"></i> june 5, 2015</li>
+                            <li class="author"><i class="fa fa-user"></i>   <a href="#">admin</a></li>
+                        </ul>
+                        <p class="post-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultrices felis in orci condimentum, at viverra nulla pulvinar. Donec diam nisl.
+                        </p>
+                    </div>
+                    <div class="post-slide13">
+                        <div class="post-img">
+                            <a href="#"><img src="http://bestjquery.com/tutorial/news-slider/demo3/images/img-5.jpg" alt=""></a>
+                        </div>
+                        <h5 class="post-title"><a href="#">Aliquam rutrum</a></h5>
+                        <ul class="post-bar">
+                            <li class="post-date"><i class="fa fa-calendar"></i> june 5, 2015</li>
+                            <li class="author"><i class="fa fa-user"></i>   <a href="#">admin</a></li>
+                        </ul>
+                        <p class="post-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultrices felis in orci condimentum, at viverra nulla pulvinar. Donec diam nisl.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- slider end -->
   
 <!-- End Content =============================================== -->
  <div class="container margin_60">
@@ -708,6 +896,7 @@ NOTE: We reserve the right to suspend accounts for any reason whatsoever, as out
 
 <!-- SPECIFIC SCRIPTS -->
 <script src="js/video_header.js"></script>
+ <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 <script>
 $(document).ready(function() {
 	'use strict';
@@ -717,7 +906,15 @@ $(document).ready(function() {
       videoTrigger: $("#video-trigger"),
       autoPlayVideo: true
     });    
-
+    $("#news-slider13").owlCarousel({
+        navigation : false,
+        pagination : true,
+        items : 3,
+        itemsDesktop:[1199,3],
+        itemsDesktopSmall:[980,2],
+        itemsMobile : [600,1],
+        navigationText : ["",""]
+    });  
 });
 </script>
 
