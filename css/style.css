@@ -2815,8 +2815,11 @@ ul.plan-features {
 
 #ts-footer .ts-box {
     margin-top: -3.125rem;
+    background-color: lightgrey;
 }
-
+#rose{
+	padding: 10px;
+}
 .section {
     position: sticky;
 }
@@ -2827,7 +2830,6 @@ ul.plan-features {
 }
 
 #contacts{
-	background-color: lightblue;
 
 }
 
