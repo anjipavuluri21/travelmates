@@ -329,7 +329,7 @@ header.sticky{
 }
 
 /* Footer  */
-footer{
+/*footer{
 	background-color:#fff;
 	border-top: 1px solid #ededed;
 	padding:35px 0;
@@ -353,7 +353,7 @@ footer .btn_1{
 	text-transform:none;
 	padding:8px 15px;
 	background:#555;
-}
+}*/
 #social_footer{
 	text-align:center;
 	border-top:1px solid #ededed;
@@ -1304,9 +1304,9 @@ ul.opening_list li span{
 }
 
 /*2.7 Contacts*/
-#contacts a{
+/*#contacts a{
 	font-size:18px;
-}
+}*/
 /*============================================================================================*/
 /* 3.  COMMON  */
 /*============================================================================================*/
@@ -1680,7 +1680,7 @@ s.checkbox-holder {
 .nomargin_top {margin-top:0;}
 .nopadding {margin: 0 !important;padding: 0 !important;}
 .nomargin {margin: 0 !important;}
-
+.margin_80 {padding-top:60px; padding-bottom:60px;}
 
 /* 3.6 Map */
 .marker_info {
@@ -2692,4 +2692,144 @@ ul.plan-features {
 .plan-tall + .plan {
 	border-left: 0;
 }
+
+.bs-example{
+        margin: 20px;
+    }
+    .accordion .fa{
+        margin-right: 0.5rem;
+
+    }
+    .post-slide13{
+    padding: 0 15px;
+
+
+}
+.post-slide13 .post-img{
+    position: relative;
+}
+.post-slide13 .post-img > a{
+    display:block;
+
+}
+.post-slide13 .post-img img{
+    width: 100%;
+    height:100%;
+    border-radius: 100%;
+
+}
+.post-slide13 .post-img:hover:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height:100%;
+    border-radius: 50%;
+    
+    background-color: rgba(220, 0, 90, 0.6);
+}
+.post-slide13 .post-img:after{
+    content: "\f065";
+    font-family: "Font Awesome 5 Free"; font-weight: 900;
+    position: absolute;
+    top:17px;
+    right:20px;
+    color:#fff;
+    opacity: 0;
+    transform: scale(0.8);
+    transition:all 0.3s linear 0s;
+}
+.post-slide13 .post-img:hover:after{
+    opacity: 1;
+    transform: scale(1);
+}
+.post-slide13 .post-title {
+    margin-top: 20px;
+}
+
+.post-slide13 .post-title > a{
+    color:#222;
+    display: block;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.post-slide13 .post-title > a:hover{
+    text-decoration: none;
+    color:#dc005a;
+}
+.post-slide13 .post-bar{
+    padding: 0;
+    list-style: none;
+}
+.post-slide13 .post-bar > li{
+    display: inline-block;
+}
+.post-slide13 .post-date,
+.post-slide13 .author,
+.post-slide13 .author > a{
+    color:#8f8f8f;
+    font-size: 12px;
+    margin-right: 16px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+.post-slide13 .post-date > i,
+.post-slide13 .author > i{
+    margin-right: 5px;
+}
+.post-slide13 .author > a:hover{
+    color:#dc005a;
+}
+.post-slide13 .post-description{
+    color:#8f8f8f;
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 5px;
+}
+.post-slide13 .post-description:before{
+    content: "";
+    display: block;
+    border-top: 4px solid #dc005a;
+    padding-bottom: 12px;
+    width: 50px;
+}
+.owl-theme .owl-controls .owl-page span{
+    width: 52px;
+    height:5px;
+    border-radius: 0;
+    opacity: 0.5;
+    margin-bottom: 0;
+}
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span{
+    background: #dc005a;
+    opacity: 1;
+}
+.privacy h2{
+	text-align: center;
+}
+.list_item {
+	list-style-type: disc;
+	
+}
+
+
+#ts-footer .ts-box {
+    margin-top: -3.125rem;
+}
+
+.section {
+    position: sticky;
+}
+
+
+.ts-fadeInUp {
+    animation-name: ts-fadeInUp;
+}
+
+#contacts{
+	background-color: lightblue;
+
+}
+
+
 
