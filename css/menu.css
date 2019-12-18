@@ -2,7 +2,7 @@
 	MINIMAL CSS3 MENU
 ==================================================================================================== */
 
-.main-menu {position: relative;z-index:9;width:auto; float:right;margin: 0;padding: 0;}
+.main-menu {position: relative;z-index:9;width:auto; float:right;margin: 0;padding: 0; }
 .main-menu a {-webkit-transition:all 0.3s;-moz-transition:all 0.3s;transition:all 0.3s;}
 .main-menu ul,
 .main-menu ul li,
@@ -12,7 +12,7 @@
 .main-menu ul li a {display: block;padding:10px;}
 			
 /*First level styles */			
-.main-menu > ul > li > a {color: #fff; padding: 2px 8px 15px 10px; font-size:14px; margin:0; font-weight:500;}
+.main-menu > ul > li > a {color: #fff; padding: 1px; font-size:14px; font-family: allerbold; margin:10px;text-transform: uppercase; font-weight:500; text-align: center;}
 
 /* Opacity mask when left open */
 .layer {display: none; position: fixed; top: 0; left: 0; width: 100%; min-width: 100%; z-index: 100; min-height: 100%; background-color: #000; opacity: 0; z-index:999;}
