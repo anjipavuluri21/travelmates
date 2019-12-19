@@ -78,8 +78,9 @@ h3 .slide_typo strong {font-family:"Helvetica Neue", Helvetica, Arial, sans-seri
 }
 
 .main_title{ text-align:center; margin-bottom:45px; }
-.main_title h2{ font-size:46px; letter-spacing:-1px; font-weight:300; margin-bottom:0;}
-.main_title p{ font-size:18px; color:#555; line-height:1.2; margin-bottom:30px; font-weight:300;}
+.main_title h2{ font-size:35px; letter-spacing:-1px; font-weight:300; margin-bottom:0;font-family: allerregular}
+.main_title p{ font-size:20px; color:#555; line-height:1.2; margin-bottom:30px; font-weight:300; font-family: aller_lightregular}
+.main_title h3{ font-size:20px; color:#00c0ff; letter-spacing:-1px; font-weight:300; margin-bottom:0;font-family: allerregular;text-transform: uppercase;}
 
 
 
@@ -517,8 +518,8 @@ footer .styled-select {
 	left:0;
 	padding:15px 0;
 	color:#fff;
-	font-size:18px;
-	z-index:99;
+	font-size:20px;
+	z-index:90;
 	border-top: 1px solid rgba(255,255,255,0.15)
 }
 #count ul{
@@ -531,7 +532,7 @@ footer .styled-select {
 	display:inline-block;
 	text-align:center;
 	margin:0 10px;
-	color:red;
+	color:#white;
 	padding-left:20px;
 	background:url(../img/dots_vert.png) center left no-repeat;
 }
@@ -554,7 +555,7 @@ footer .styled-select {
 .header-video {
   position: relative;
   overflow: hidden;
-   background: #000;
+  background: #000;
 }
 #hero_video {
 	position: relative;
@@ -1035,7 +1036,7 @@ ul#cat_nav li a:hover, ul#cat_nav li a.active{
 	color:#111;
 }
 #sub_content{
-	 display: table-cell;
+	display: table-cell;
   	padding:0 15%;
     vertical-align: middle;
 	text-align:center;
@@ -2833,8 +2834,26 @@ ul.plan-features {
 .ts-fadeInUp {
     animation-name: ts-fadeInUp;
 }
+ .content{
+ 	text-align: left;
+ 	font-family: aller_lightregular;
+ }
+ #safety a{
+ 	color:#555;
+ 	font-size: 17px;
+ 	font-family:aller_lightregular;
 
+}
 
+ #safety a:hover{
+ 	color:#ff1c7c;
+ 	font-family:aller_lightregular;
+}
+
+ 
+ 
+
+    
 
 
 

@@ -12,7 +12,7 @@
 .main-menu ul li a {display: block;padding:10px;}
 			
 /*First level styles */			
-.main-menu > ul > li > a {color: #fff; padding: 1px; font-size:14px; font-family: allerregular; margin:10px;text-transform: uppercase; font-weight:500; text-align: center;}
+.main-menu > ul > li > a {color: #fff; padding: 0px; font-size:14px; font-family: allerregular; margin:9px;text-transform: uppercase; font-weight:500; text-align: center;}
 
 /* Opacity mask when left open */
 .layer {display: none; position: fixed; top: 0; left: 0; width: 100%; min-width: 100%; z-index: 100; min-height: 100%; background-color: #000; opacity: 0; z-index:999;}
@@ -51,6 +51,11 @@ a.dropdown-toggle.icon-search{display: inline-block;}
 .main-menu ul li:hover > .menu-wrapper {display:block;padding: 0;}
 .main-menu ul ul li {display: block;height: auto;padding: 0;}		
 .main-menu ul ul li a {font-size: 13px;color: #666;border-bottom:1px solid #ededed;display: block;}
+.main-menu ul li a:hover {
+  /*background-color: red;*/
+  text-decoration: underline;
+  color:#ff1c7c;
+}
 .main-menu ul ul li:last-child a {border-bottom:none;}
 
 .main-menu ul ul li:hover > a {background-color:#f9f9f9;color:#ec008c; padding-left:15px;}

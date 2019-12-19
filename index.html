@@ -80,9 +80,24 @@
 
     h4{font-family: 'allerregular';}
 
-   
+  @font-face {
+    font-family: 'aller_lightregular';
+    src: url('fonts/aller_lt-webfont.woff2') format('woff2'),
+         url('fonts/aller_lt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;}
     
+    @font-face {
+    font-family: 'allerbold';
+    src: url('fonts/aller_bd-webfont.woff2') format('woff2'),
+         url('fonts/aller_bd-webfont.woff') format('woff');
+         
+    font-weight: normal;
+    font-style: normal;}
+
      </style>
+
+
 
 </head>
 
@@ -103,16 +118,16 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-4 col-sm-4 col-xs-4">
-                <a href="index.html" id="logo"">
-                <img src="img/Travel.png" width="190" height="39" alt="" data-retina="true" class="hidden-xs" style="vertical-align: super;">
-                <!-- <img src="img/logo_mobile.png" width="59" height="23" alt="" data-retina="true" class="hidden-lg hidden-md hidden-sm"> -->
+                <a href="index.html" id="logo">
+                <img src="img/Travel.png" width="190" height="39" alt="" data-retina="true" class="hidden-xs" style="vertical-align: super"; >
+                <img src="img/Travel.png" width="59" height="23" alt="" data-retina="true" class="hidden-lg hidden-md hidden-sm">
                 </a>
             </div>
             <nav class="col--md-8 col-sm-8 col-xs-8">
             <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Menu mobile</span></a>
             <div class="main-menu">
                 <div id="header_menu">
-                    <img src="img/logo.png" width="190" height="23" alt="" data-retina="true">
+                    <img src="img/travel.png" width="190" height="39" alt="" data-retina="true">
                 </div>
                 <a href="#" class="open_close" id="close_in"><i class="icon_close"></i></a>
                 <ul>
@@ -134,22 +149,22 @@
     <!-- SubHeader =============================================== -->
     <section class="header-video">
     <div id="hero_video">
-        <div id="sub_content">
-            <h1>Find the perfect travel companion!</h1>
-            <p>
+        <div id="sub_content" >
+            <h1 style="font-family: 'allerregular';">Find the perfect travel companion!</h1>
+            <p style="font-family: 'allerregular';">
                 The World has endless places to explore and so does the people who share the same dream. Share the cost, share the journey, share the experience.
             </p>
-            <p>Our industry-leading algorithms will ensure that you end up with your perfect travelling companion.</p>
+            <p style="font-family: 'allerregular';">Our industry-leading algorithms will ensure that you end up with your perfect travelling companion.</p>
             
         </div><!-- End sub_content -->
     </div>
-    <img src="" alt="" class="header-video--media" data-video-src="" data-teaser-source="video/travelmates" data-provider="" data-video-width="1920" data-video-height="960">
+    <img src="img/video_fix.png" alt="" class="header-video--media" data-video-src="" data-teaser-source="video/travelmates" data-provider="" data-video-width="1920" data-video-height="960">
     <div id="count" class="hidden-xs">
         <ul>
-            <li><h2 style="color: white;"><img src="img/happy.png" width="80px" height="50px"></h2><b>3M+</b> Verified Profils</li>
-            <li><h2 style="color: white;"><b>210+</b></h2> Countries</li>
-            <li><h2 style="color: white;"><b>24+<b></h2> Travel Destinations</li>
-            <li><h2 style="color: white;"><b>24/7</b></h2> Customer Support</li>
+            <li><img src="" height="" width="" alt=""><b>3M+</b> <span style="font-family: 'allerregular';">Verified Profils</span></li>
+            <li><img src="" height="" width="" alt=""><b>210+</b> <span style="font-family: 'allerregular';">Countries</span></li>
+            <li><img src="" height="" width="" alt=""><b>24+</b> <span style="font-family: 'allerregular';">Travel Destinations</span></li>
+            <li><img src="" height="" width="" alt=""><b>24/7</b> <span style="font-family: 'allerregular';">Customer Support</span></li>
         </ul>
     </div>
     </section><!-- End Header video -->
@@ -160,16 +175,35 @@
          <div class="container margin_60" id="safety">
         
          <div class="main_title" >
-            <h2 class="nomargin_top" style="padding-top:0">Saftety</h2>
+          <img src="img/tick.png" width="80" height="96">
+           <br>
+           <br>
+            <h2 class="nomargin_top" style="padding-top:0";>Saftety</h2>
             <br>
-            <br>
-            <p>
-                In this digital world of constant engament, we often forget how trustworthy someone could be we barely know, there could be a minor possibility of people portraying different personality online.  Hence, we do our upmost to make sure those people are not allowed to have access of our site and services. </p>                  <h3><b> "It pays to bear a few important safety tips in mind"</b></h3>
-              
-            <a href="#" align="center">ReadMore</a>
-        </div>
+            
+            <p >
+                In this digital world of constant engament, we often forget how trustworthy someone could be we barely know, there could be a minor possibility of people portraying different personality online.  Hence, we do our upmost to make sure those people are not allowed to have access of our site and services. </p>                  <h3> "It pays to bear a few important safety tips in mind"</h3>
+                <br>
 
+              <a href="#safety" class="show_hide" data-content="toggle-text">Read more</a>
+             
+              <div class="content ">
+              &nbsp;<p><span class="glyphicon glyphicon-ok"; style="color:#ff1c7c";></span> If travel arrangments are made with a travel mate, then verify the user via a phone call, skype or webcam. / verify the travel mate via phone call, skype, and the web came before travel takes place.</p>
+              <p><span class="glyphicon glyphicon-ok"; style="color:#ff1c7c";></span> Never send money to another member for any reason and report suspicious people to our support team.
+</p>
+              <p><span class="glyphicon glyphicon-ok"; style="color:#ff1c7c";></span> Always update your Friend, Family, or guardian with all the relevant traveling information such as contact number, Address of the residing place, and travel itinerary.
+</p>
+              <p><span class="glyphicon glyphicon-ok"; style="color:#ff1c7c";></span> Do not agree on terms where you are asked to be received or greeted by a third party.
+</p>
+              <p><span class="glyphicon glyphicon-ok"; style="color:#ff1c7c";></span> Ensure you have sufficient funds in case you intend to end the travel before the agreed time.
+</p>
+              <p><span class="glyphicon glyphicon-ok"; style="color:#ff1c7c";></span> Do your research before you travel to a new destination like local SIM update, Gather essential contact numbers(such as embassy, police, hospital, and local taxi), and keep someone updated all the time.
+</p>
+         <p style="text-align: center;">Please note that travelmates.online does not take any responsibility for the arrangements made by the users using the site. This site exists merely as a place where people can learn about each other, gather information about travel destinations, and make arrangements. Any plans and actions undertaken remain the sole responsibility of the site user, not the company. For any additional legal information, please refer to the terms and conditions. 
+If you have any further queries, please feel free to contact us at <a href="#">support@travelmates.com.</a></p>
+          </div>
     </div>
+  </div>
     <!-- safety tips ending -->
       <!-- End container -->  
 
@@ -760,6 +794,17 @@ $(document).ready(function() {
     });  
 });
 </script>
+<script>
+  $(document).ready(function () {
+    $(".content").hide();
+    $(".show_hide").on("click", function () {
+        var txt = $(".content").is(':visible') ? 'Read more' : 'Read less';
+        $(".show_hide").text(txt);
+        $(this).next('.content').slideToggle(200);
+    });
+});
+</script>>
+
 
 </body>
 </html>
