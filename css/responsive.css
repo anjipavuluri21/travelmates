@@ -42,7 +42,7 @@
 @media only screen and (max-width : 768px) {
 	#sub_content h1{ font-size:42px;}
 	.strip_list, .strip_list .go_to{height:auto;}
-	#hero_video{ background: #333 url(../img/sub_header_home.jpg); background-size:cover; background-position: center center;}
+	#hero_video{ /*background: #333 url(../img/sub_header_home.jpg);*/ background-size:cover; background-position: center center;}
 	
    /*Map listing */
   .full-height, .row-height {height:auto;}
@@ -60,7 +60,7 @@
 		
 	#sub_content{padding:0 30px;}
 	#sub_content h1{font-size:24px;}
-	#home #subheader #sub_content p , #hero_video #sub_content p{ display:none}
+	#home #subheader #sub_content p , /*#hero_video #sub_content p{ display:none}*/
 	#custom-search-input, #custom-search-input .search-query {width:400px;}
 	
 	.main_title {font-size:14px; margin-bottom:10px; }
