@@ -2829,9 +2829,10 @@ ul.plan-features {
     border-radius: 0;
     opacity: 0.5;
     margin-bottom: 0;
+    
 }
 .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span{
-    background: #dc005a;
+    background: white;
     opacity: 1;
 }
 /*.privacy h2{
